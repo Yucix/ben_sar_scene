@@ -226,7 +226,7 @@ def build_parser():
     scene_group = parser.add_argument_group('Scene')
     scene_group.add_argument('--num-scenes', default=3, type=int, help='number of latent scenes')
     scene_group.add_argument('--scene-warmup', default=5, type=int,
-                             help='epochs before updating scene co-occurrence matrices')
+                             help='epochs before updating scene co-occurrence matrices (not LR warmup)')
     scene_group.add_argument('--scene-gamma', default=0.05, type=float,
                              help='dictionary refinement weight')
     scene_group.add_argument('--fusion-alpha', default=0.5, type=float,
